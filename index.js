@@ -25,6 +25,6 @@ app.get("/about", (req, res) => {
     res.render("index")
 })
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
     console.log("Server initilized");
 })
