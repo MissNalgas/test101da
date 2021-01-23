@@ -10998,6 +10998,475 @@ class RepeatWhenSubscriber extends _OuterSubscriber__WEBPACK_IMPORTED_MODULE_1__
 
 /***/ }),
 
+/***/ "Gxio":
+/*!*********************************************************************!*\
+  !*** ./node_modules/primeng/__ivy_ngcc__/fesm2015/primeng-toast.js ***!
+  \*********************************************************************/
+/*! exports provided: Toast, ToastItem, ToastModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Toast", function() { return Toast; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ToastItem", function() { return ToastItem; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ToastModule", function() { return ToastModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var primeng_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! primeng/dom */ "YyRF");
+/* harmony import */ var primeng_api__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! primeng/api */ "7zfz");
+/* harmony import */ var primeng_ripple__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! primeng/ripple */ "Q4Mo");
+/* harmony import */ var _angular_animations__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/animations */ "R0Ic");
+
+
+
+
+
+
+
+
+
+
+
+
+const _c0 = ["container"];
+const _c1 = function (a0, a1, a2, a3) { return { "pi-info-circle": a0, "pi-exclamation-triangle": a1, "pi-times-circle": a2, "pi-check": a3 }; };
+function ToastItem_ng_container_3_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "span", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
+} if (rf & 2) {
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMap"]("p-message-icon pi" + (ctx_r1.message.icon ? " " + ctx_r1.message.icon : ""));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction4"](5, _c1, ctx_r1.message.severity == "info", ctx_r1.message.severity == "warn", ctx_r1.message.severity == "error", ctx_r1.message.severity == "success"));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r1.message.summary);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r1.message.detail);
+} }
+function ToastItem_button_4_Template(rf, ctx) { if (rf & 1) {
+    const _r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function ToastItem_button_4_Template_button_click_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r5); const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r4.onCloseIconClick($event); })("keydown.enter", function ToastItem_button_4_Template_button_keydown_enter_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r5); const ctx_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r6.onCloseIconClick($event); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "span", 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} }
+function ToastItem_ng_container_5_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainer"](0);
+} }
+const _c2 = function (a0, a1, a2, a3) { return { showTransformParams: a0, hideTransformParams: a1, showTransitionParams: a2, hideTransitionParams: a3 }; };
+const _c3 = function (a1) { return { value: "visible", params: a1 }; };
+const _c4 = function (a0) { return { $implicit: a0 }; };
+function Toast_p_toastItem_2_Template(rf, ctx) { if (rf & 1) {
+    const _r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p-toastItem", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("onClose", function Toast_p_toastItem_2_Template_p_toastItem_onClose_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r5); const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r4.onMessageClose($event); })("@toastAnimation.start", function Toast_p_toastItem_2_Template_p_toastItem_animation_toastAnimation_start_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r5); const ctx_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r6.onAnimationStart($event); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const msg_r2 = ctx.$implicit;
+    const i_r3 = ctx.index;
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("message", msg_r2)("index", i_r3)("template", ctx_r1.template)("@toastAnimation", undefined)("showTransformOptions", ctx_r1.showTransformOptions)("hideTransformOptions", ctx_r1.hideTransformOptions)("showTransitionOptions", ctx_r1.showTransitionOptions)("hideTransitionOptions", ctx_r1.hideTransitionOptions);
+} }
+class ToastItem {
+    constructor(zone) {
+        this.zone = zone;
+        this.onClose = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+    }
+    ngAfterViewInit() {
+        this.initTimeout();
+    }
+    initTimeout() {
+        if (!this.message.sticky) {
+            this.zone.runOutsideAngular(() => {
+                this.timeout = setTimeout(() => {
+                    this.onClose.emit({
+                        index: this.index,
+                        message: this.message
+                    });
+                }, this.message.life || 3000);
+            });
+        }
+    }
+    clearTimeout() {
+        if (this.timeout) {
+            clearTimeout(this.timeout);
+            this.timeout = null;
+        }
+    }
+    onMouseEnter() {
+        this.clearTimeout();
+    }
+    onMouseLeave() {
+        this.initTimeout();
+    }
+    onCloseIconClick(event) {
+        this.clearTimeout();
+        this.onClose.emit({
+            index: this.index,
+            message: this.message
+        });
+        event.preventDefault();
+    }
+    ngOnDestroy() {
+        this.clearTimeout();
+    }
+}
+ToastItem.ɵfac = function ToastItem_Factory(t) { return new (t || ToastItem)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"])); };
+ToastItem.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ToastItem, selectors: [["p-toastItem"]], viewQuery: function ToastItem_Query(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_c0, true);
+    } if (rf & 2) {
+        var _t;
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.containerViewChild = _t.first);
+    } }, inputs: { message: "message", index: "index", template: "template", showTransformOptions: "showTransformOptions", hideTransformOptions: "hideTransformOptions", showTransitionOptions: "showTransitionOptions", hideTransitionOptions: "hideTransitionOptions" }, outputs: { onClose: "onClose" }, decls: 6, vars: 16, consts: [[1, "p-toast-message", 3, "ngClass", "mouseenter", "mouseleave"], ["container", ""], ["role", "alert", "aria-live", "assertive", "aria-atomic", "true", 1, "p-toast-message-content"], [4, "ngIf"], ["type", "button", "class", "p-toast-icon-close p-link", "pRipple", "", 3, "click", "keydown.enter", 4, "ngIf"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [3, "ngClass"], [1, "p-toast-message-text"], [1, "p-toast-summary"], [1, "p-toast-detail"], ["type", "button", "pRipple", "", 1, "p-toast-icon-close", "p-link", 3, "click", "keydown.enter"], [1, "p-toast-icon-close-icon", "pi", "pi-times"]], template: function ToastItem_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0, 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("mouseenter", function ToastItem_Template_div_mouseenter_0_listener() { return ctx.onMouseEnter(); })("mouseleave", function ToastItem_Template_div_mouseleave_0_listener() { return ctx.onMouseLeave(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, ToastItem_ng_container_3_Template, 7, 10, "ng-container", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, ToastItem_button_4_Template, 2, 0, "button", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, ToastItem_ng_container_5_Template, 1, 0, "ng-container", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", "p-toast-message-" + ctx.message.severity)("@messageState", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction1"](12, _c3, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction4"](7, _c2, ctx.showTransformOptions, ctx.hideTransformOptions, ctx.showTransitionOptions, ctx.hideTransitionOptions)));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("id", ctx.message.id);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", !ctx.template);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.message.closable !== false);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngTemplateOutlet", ctx.template)("ngTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction1"](14, _c4, ctx.message));
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["NgClass"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgTemplateOutlet"], primeng_ripple__WEBPACK_IMPORTED_MODULE_4__["Ripple"]], encapsulation: 2, data: { animation: [
+            Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["trigger"])('messageState', [
+                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["state"])('visible', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["style"])({
+                    transform: 'translateY(0)',
+                    opacity: 1
+                })),
+                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["transition"])('void => *', [
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["style"])({ transform: '{{showTransformParams}}', opacity: 0 }),
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["animate"])('{{showTransitionParams}}')
+                ]),
+                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["transition"])('* => void', [
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["animate"])(('{{hideTransitionParams}}'), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["style"])({
+                        height: 0,
+                        opacity: 0,
+                        transform: '{{hideTransformParams}}'
+                    }))
+                ])
+            ])
+        ] }, changeDetection: 0 });
+ToastItem.ctorParameters = () => [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"] }
+];
+ToastItem.propDecorators = {
+    message: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    index: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    template: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    showTransformOptions: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    hideTransformOptions: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    showTransitionOptions: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    hideTransitionOptions: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    onClose: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"] }],
+    containerViewChild: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"], args: ['container',] }]
+};
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ToastItem, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'p-toastItem',
+                template: `
+        <div #container [attr.id]="message.id" class="p-toast-message" [ngClass]="'p-toast-message-' + message.severity" [@messageState]="{value: 'visible', params: {showTransformParams: showTransformOptions, hideTransformParams: hideTransformOptions, showTransitionParams: showTransitionOptions, hideTransitionParams: hideTransitionOptions}}"
+                (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
+            <div class="p-toast-message-content" role="alert" aria-live="assertive" aria-atomic="true">
+                <ng-container *ngIf="!template">
+                    <span [class]="'p-message-icon pi' + (message.icon ? ' ' + message.icon : '')" [ngClass]="{'pi-info-circle': message.severity == 'info', 'pi-exclamation-triangle': message.severity == 'warn',
+                        'pi-times-circle': message.severity == 'error', 'pi-check' :message.severity == 'success'}"></span>
+                    <div class="p-toast-message-text">
+                        <div class="p-toast-summary">{{message.summary}}</div>
+                        <div class="p-toast-detail">{{message.detail}}</div>
+                    </div>
+                </ng-container>
+                <button type="button" class="p-toast-icon-close p-link" (click)="onCloseIconClick($event)" (keydown.enter)="onCloseIconClick($event)" *ngIf="message.closable !== false" pRipple>
+                    <span class="p-toast-icon-close-icon pi pi-times"></span>
+                </button>
+                <ng-container *ngTemplateOutlet="template; context: {$implicit: message}"></ng-container>
+            </div>
+        </div>
+    `,
+                animations: [
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["trigger"])('messageState', [
+                        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["state"])('visible', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["style"])({
+                            transform: 'translateY(0)',
+                            opacity: 1
+                        })),
+                        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["transition"])('void => *', [
+                            Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["style"])({ transform: '{{showTransformParams}}', opacity: 0 }),
+                            Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["animate"])('{{showTransitionParams}}')
+                        ]),
+                        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["transition"])('* => void', [
+                            Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["animate"])(('{{hideTransitionParams}}'), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["style"])({
+                                height: 0,
+                                opacity: 0,
+                                transform: '{{hideTransformParams}}'
+                            }))
+                        ])
+                    ])
+                ],
+                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None,
+                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectionStrategy"].OnPush
+            }]
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"] }]; }, { onClose: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"]
+        }], message: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], index: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], template: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], showTransformOptions: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], hideTransformOptions: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], showTransitionOptions: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], hideTransitionOptions: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], containerViewChild: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"],
+            args: ['container']
+        }] }); })();
+class Toast {
+    constructor(messageService, cd) {
+        this.messageService = messageService;
+        this.cd = cd;
+        this.autoZIndex = true;
+        this.baseZIndex = 0;
+        this.position = 'top-right';
+        this.preventOpenDuplicates = false;
+        this.preventDuplicates = false;
+        this.showTransformOptions = 'translateY(100%)';
+        this.hideTransformOptions = 'translateY(-100%)';
+        this.showTransitionOptions = '300ms ease-out';
+        this.hideTransitionOptions = '250ms ease-in';
+        this.onClose = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+    }
+    ngOnInit() {
+        this.messageSubscription = this.messageService.messageObserver.subscribe(messages => {
+            if (messages) {
+                if (messages instanceof Array) {
+                    const filteredMessages = messages.filter(m => this.canAdd(m));
+                    this.add(filteredMessages);
+                }
+                else if (this.canAdd(messages)) {
+                    this.add([messages]);
+                }
+            }
+        });
+        this.clearSubscription = this.messageService.clearObserver.subscribe(key => {
+            if (key) {
+                if (this.key === key) {
+                    this.messages = null;
+                }
+            }
+            else {
+                this.messages = null;
+            }
+            this.cd.markForCheck();
+        });
+    }
+    add(messages) {
+        this.messages = this.messages ? [...this.messages, ...messages] : [...messages];
+        if (this.preventDuplicates) {
+            this.messagesArchieve = this.messagesArchieve ? [...this.messagesArchieve, ...messages] : [...messages];
+        }
+        this.cd.markForCheck();
+    }
+    canAdd(message) {
+        let allow = this.key === message.key;
+        if (allow && this.preventOpenDuplicates) {
+            allow = !this.containsMessage(this.messages, message);
+        }
+        if (allow && this.preventDuplicates) {
+            allow = !this.containsMessage(this.messagesArchieve, message);
+        }
+        return allow;
+    }
+    containsMessage(collection, message) {
+        if (!collection) {
+            return false;
+        }
+        return collection.find(m => {
+            return ((m.summary === message.summary) && (m.detail == message.detail) && (m.severity === message.severity));
+        }) != null;
+    }
+    ngAfterContentInit() {
+        this.templates.forEach((item) => {
+            switch (item.getType()) {
+                case 'message':
+                    this.template = item.template;
+                    break;
+                default:
+                    this.template = item.template;
+                    break;
+            }
+        });
+    }
+    onMessageClose(event) {
+        this.messages.splice(event.index, 1);
+        this.onClose.emit({
+            message: event.message
+        });
+        this.cd.detectChanges();
+    }
+    onAnimationStart(event) {
+        if (event.fromState === 'void' && this.autoZIndex) {
+            this.containerViewChild.nativeElement.style.zIndex = String(this.baseZIndex + (++primeng_dom__WEBPACK_IMPORTED_MODULE_2__["DomHandler"].zindex));
+        }
+    }
+    ngOnDestroy() {
+        if (this.messageSubscription) {
+            this.messageSubscription.unsubscribe();
+        }
+        if (this.clearSubscription) {
+            this.clearSubscription.unsubscribe();
+        }
+    }
+}
+Toast.ɵfac = function Toast_Factory(t) { return new (t || Toast)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](primeng_api__WEBPACK_IMPORTED_MODULE_3__["MessageService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"])); };
+Toast.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: Toast, selectors: [["p-toast"]], contentQueries: function Toast_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵcontentQuery"](dirIndex, primeng_api__WEBPACK_IMPORTED_MODULE_3__["PrimeTemplate"], false);
+    } if (rf & 2) {
+        var _t;
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.templates = _t);
+    } }, viewQuery: function Toast_Query(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_c0, true);
+    } if (rf & 2) {
+        var _t;
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.containerViewChild = _t.first);
+    } }, inputs: { autoZIndex: "autoZIndex", baseZIndex: "baseZIndex", position: "position", preventOpenDuplicates: "preventOpenDuplicates", preventDuplicates: "preventDuplicates", showTransformOptions: "showTransformOptions", hideTransformOptions: "hideTransformOptions", showTransitionOptions: "showTransitionOptions", hideTransitionOptions: "hideTransitionOptions", key: "key", style: "style", styleClass: "styleClass" }, outputs: { onClose: "onClose" }, decls: 3, vars: 5, consts: [[3, "ngClass", "ngStyle"], ["container", ""], [3, "message", "index", "template", "showTransformOptions", "hideTransformOptions", "showTransitionOptions", "hideTransitionOptions", "onClose", 4, "ngFor", "ngForOf"], [3, "message", "index", "template", "showTransformOptions", "hideTransformOptions", "showTransitionOptions", "hideTransitionOptions", "onClose"]], template: function Toast_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0, 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, Toast_p_toastItem_2_Template, 1, 8, "p-toastItem", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMap"](ctx.styleClass);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", "p-toast p-component p-toast-" + ctx.position)("ngStyle", ctx.style);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.messages);
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["NgClass"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgStyle"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgForOf"], ToastItem], styles: [".p-toast{position:fixed;width:25rem}.p-toast-message{overflow:hidden}.p-toast-message-content{align-items:flex-start;display:flex}.p-toast-message-text{flex:1 1 auto}.p-toast-top-right{right:20px;top:20px}.p-toast-top-left{left:20px;top:20px}.p-toast-bottom-left{bottom:20px;left:20px}.p-toast-bottom-right{bottom:20px;right:20px}.p-toast-top-center{left:50%;margin-left:-10em;top:20px}.p-toast-bottom-center{bottom:20px;left:50%;margin-left:-10em}.p-toast-center{left:50%;min-width:20vw;top:50%;transform:translate(-50%,-50%)}.p-toast-icon-close{align-items:center;display:flex;justify-content:center;overflow:hidden;position:relative}.p-toast-icon-close.p-link{cursor:pointer}"], encapsulation: 2, data: { animation: [
+            Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["trigger"])('toastAnimation', [
+                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["transition"])(':enter, :leave', [
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["query"])('@*', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["animateChild"])())
+                ])
+            ])
+        ] }, changeDetection: 0 });
+Toast.ctorParameters = () => [
+    { type: primeng_api__WEBPACK_IMPORTED_MODULE_3__["MessageService"] },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] }
+];
+Toast.propDecorators = {
+    key: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    autoZIndex: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    baseZIndex: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    style: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    styleClass: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    position: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    preventOpenDuplicates: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    preventDuplicates: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    showTransformOptions: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    hideTransformOptions: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    showTransitionOptions: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    hideTransitionOptions: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    onClose: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"] }],
+    containerViewChild: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"], args: ['container',] }],
+    templates: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ContentChildren"], args: [primeng_api__WEBPACK_IMPORTED_MODULE_3__["PrimeTemplate"],] }]
+};
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](Toast, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'p-toast',
+                template: `
+        <div #container [ngClass]="'p-toast p-component p-toast-' + position" [ngStyle]="style" [class]="styleClass">
+            <p-toastItem *ngFor="let msg of messages; let i=index" [message]="msg" [index]="i" (onClose)="onMessageClose($event)"
+                    [template]="template" @toastAnimation (@toastAnimation.start)="onAnimationStart($event)" 
+                    [showTransformOptions]="showTransformOptions" [hideTransformOptions]="hideTransformOptions" 
+                    [showTransitionOptions]="showTransitionOptions" [hideTransitionOptions]="hideTransitionOptions"></p-toastItem>
+        </div>
+    `,
+                animations: [
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["trigger"])('toastAnimation', [
+                        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["transition"])(':enter, :leave', [
+                            Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["query"])('@*', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["animateChild"])())
+                        ])
+                    ])
+                ],
+                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectionStrategy"].OnPush,
+                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None,
+                styles: [".p-toast{position:fixed;width:25rem}.p-toast-message{overflow:hidden}.p-toast-message-content{align-items:flex-start;display:flex}.p-toast-message-text{flex:1 1 auto}.p-toast-top-right{right:20px;top:20px}.p-toast-top-left{left:20px;top:20px}.p-toast-bottom-left{bottom:20px;left:20px}.p-toast-bottom-right{bottom:20px;right:20px}.p-toast-top-center{left:50%;margin-left:-10em;top:20px}.p-toast-bottom-center{bottom:20px;left:50%;margin-left:-10em}.p-toast-center{left:50%;min-width:20vw;top:50%;transform:translate(-50%,-50%)}.p-toast-icon-close{align-items:center;display:flex;justify-content:center;overflow:hidden;position:relative}.p-toast-icon-close.p-link{cursor:pointer}"]
+            }]
+    }], function () { return [{ type: primeng_api__WEBPACK_IMPORTED_MODULE_3__["MessageService"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] }]; }, { autoZIndex: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], baseZIndex: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], position: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], preventOpenDuplicates: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], preventDuplicates: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], showTransformOptions: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], hideTransformOptions: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], showTransitionOptions: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], hideTransitionOptions: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], onClose: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"]
+        }], key: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], style: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], styleClass: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], containerViewChild: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"],
+            args: ['container']
+        }], templates: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ContentChildren"],
+            args: [primeng_api__WEBPACK_IMPORTED_MODULE_3__["PrimeTemplate"]]
+        }] }); })();
+class ToastModule {
+}
+ToastModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: ToastModule });
+ToastModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function ToastModule_Factory(t) { return new (t || ToastModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], primeng_ripple__WEBPACK_IMPORTED_MODULE_4__["RippleModule"]], primeng_api__WEBPACK_IMPORTED_MODULE_3__["SharedModule"]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](ToastModule, { declarations: function () { return [Toast, ToastItem]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], primeng_ripple__WEBPACK_IMPORTED_MODULE_4__["RippleModule"]]; }, exports: function () { return [Toast, primeng_api__WEBPACK_IMPORTED_MODULE_3__["SharedModule"]]; } }); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ToastModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
+        args: [{
+                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], primeng_ripple__WEBPACK_IMPORTED_MODULE_4__["RippleModule"]],
+                exports: [Toast, primeng_api__WEBPACK_IMPORTED_MODULE_3__["SharedModule"]],
+                declarations: [Toast, ToastItem]
+            }]
+    }], null, null); })();
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+//# sourceMappingURL=primeng-toast.js.map
+
+/***/ }),
+
 /***/ "GyhO":
 /*!******************************************************************!*\
   !*** ./node_modules/rxjs/_esm2015/internal/observable/concat.js ***!
@@ -11512,6 +11981,275 @@ function startWith(...array) {
 
 /***/ }),
 
+/***/ "Ji6n":
+/*!************************************************************************!*\
+  !*** ./node_modules/primeng/__ivy_ngcc__/fesm2015/primeng-checkbox.js ***!
+  \************************************************************************/
+/*! exports provided: CHECKBOX_VALUE_ACCESSOR, Checkbox, CheckboxModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CHECKBOX_VALUE_ACCESSOR", function() { return CHECKBOX_VALUE_ACCESSOR; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Checkbox", function() { return Checkbox; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CheckboxModule", function() { return CheckboxModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+
+
+
+
+
+
+
+const _c0 = ["cb"];
+const _c1 = function (a1, a2, a3) { return { "p-checkbox-label": true, "p-checkbox-label-active": a1, "p-disabled": a2, "p-checkbox-label-focus": a3 }; };
+function Checkbox_label_6_Template(rf, ctx) { if (rf & 1) {
+    const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "label", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function Checkbox_label_6_Template_label_click_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r3); const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](3); return ctx_r2.onClick($event, _r0, true); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMap"](ctx_r1.labelStyleClass);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction3"](5, _c1, ctx_r1.checked, ctx_r1.disabled, ctx_r1.focused));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("for", ctx_r1.inputId);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r1.label);
+} }
+const _c2 = function (a1, a2, a3) { return { "p-checkbox p-component": true, "p-checkbox-checked": a1, "p-checkbox-disabled": a2, "p-checkbox-focused": a3 }; };
+const _c3 = function (a0, a1, a2) { return { "p-highlight": a0, "p-disabled": a1, "p-focus": a2 }; };
+const CHECKBOX_VALUE_ACCESSOR = {
+    provide: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NG_VALUE_ACCESSOR"],
+    useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["forwardRef"])(() => Checkbox),
+    multi: true
+};
+class Checkbox {
+    constructor(cd) {
+        this.cd = cd;
+        this.checkboxIcon = 'pi pi-check';
+        this.onChange = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        this.onModelChange = () => { };
+        this.onModelTouched = () => { };
+        this.focused = false;
+        this.checked = false;
+    }
+    onClick(event, checkbox, focus) {
+        event.preventDefault();
+        if (this.disabled || this.readonly) {
+            return;
+        }
+        this.checked = !this.checked;
+        this.updateModel(event);
+        if (focus) {
+            checkbox.focus();
+        }
+    }
+    updateModel(event) {
+        if (!this.binary) {
+            if (this.checked)
+                this.addValue();
+            else
+                this.removeValue();
+            this.onModelChange(this.model);
+            if (this.formControl) {
+                this.formControl.setValue(this.model);
+            }
+        }
+        else {
+            this.onModelChange(this.checked);
+        }
+        this.onChange.emit({ checked: this.checked, originalEvent: event });
+    }
+    handleChange(event) {
+        if (!this.readonly) {
+            this.checked = event.target.checked;
+            this.updateModel(event);
+        }
+    }
+    isChecked() {
+        if (this.binary)
+            return this.model;
+        else
+            return this.model && this.model.indexOf(this.value) > -1;
+    }
+    removeValue() {
+        this.model = this.model.filter(val => val !== this.value);
+    }
+    addValue() {
+        if (this.model)
+            this.model = [...this.model, this.value];
+        else
+            this.model = [this.value];
+    }
+    onFocus() {
+        this.focused = true;
+    }
+    onBlur() {
+        this.focused = false;
+        this.onModelTouched();
+    }
+    focus() {
+        this.inputViewChild.nativeElement.focus();
+    }
+    writeValue(model) {
+        this.model = model;
+        this.checked = this.isChecked();
+        this.cd.markForCheck();
+    }
+    registerOnChange(fn) {
+        this.onModelChange = fn;
+    }
+    registerOnTouched(fn) {
+        this.onModelTouched = fn;
+    }
+    setDisabledState(val) {
+        this.disabled = val;
+        this.cd.markForCheck();
+    }
+}
+Checkbox.ɵfac = function Checkbox_Factory(t) { return new (t || Checkbox)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"])); };
+Checkbox.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: Checkbox, selectors: [["p-checkbox"]], viewQuery: function Checkbox_Query(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_c0, true);
+    } if (rf & 2) {
+        var _t;
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.inputViewChild = _t.first);
+    } }, inputs: { checkboxIcon: "checkboxIcon", disabled: "disabled", value: "value", name: "name", binary: "binary", label: "label", ariaLabelledBy: "ariaLabelledBy", tabindex: "tabindex", inputId: "inputId", style: "style", styleClass: "styleClass", labelStyleClass: "labelStyleClass", formControl: "formControl", readonly: "readonly", required: "required" }, outputs: { onChange: "onChange" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵProvidersFeature"]([CHECKBOX_VALUE_ACCESSOR])], decls: 7, vars: 25, consts: [[3, "ngStyle", "ngClass"], [1, "p-hidden-accessible"], ["type", "checkbox", 3, "readonly", "value", "checked", "disabled", "focus", "blur", "change"], ["cb", ""], ["role", "checkbox", 1, "p-checkbox-box", 3, "ngClass", "click"], [1, "p-checkbox-icon", 3, "ngClass"], [3, "class", "ngClass", "click", 4, "ngIf"], [3, "ngClass", "click"]], template: function Checkbox_Template(rf, ctx) { if (rf & 1) {
+        const _r4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "input", 2, 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("focus", function Checkbox_Template_input_focus_2_listener() { return ctx.onFocus(); })("blur", function Checkbox_Template_input_blur_2_listener() { return ctx.onBlur(); })("change", function Checkbox_Template_input_change_2_listener($event) { return ctx.handleChange($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function Checkbox_Template_div_click_4_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r4); const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](3); return ctx.onClick($event, _r0, true); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "span", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](6, Checkbox_label_6_Template, 2, 9, "label", 6);
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMap"](ctx.styleClass);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", ctx.style)("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction3"](17, _c2, ctx.checked, ctx.disabled, ctx.focused));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("readonly", ctx.readonly)("value", ctx.value)("checked", ctx.checked)("disabled", ctx.disabled);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("id", ctx.inputId)("name", ctx.name)("tabindex", ctx.tabindex)("aria-labelledby", ctx.ariaLabelledBy)("required", ctx.required);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction3"](21, _c3, ctx.checked, ctx.disabled, ctx.focused));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("aria-checked", ctx.checked);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", ctx.checked ? ctx.checkboxIcon : null);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.label);
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["NgStyle"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgClass"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgIf"]], styles: [".p-checkbox{-ms-user-select:none;-webkit-user-select:none;cursor:pointer;display:inline-flex;user-select:none;vertical-align:bottom}.p-checkbox-disabled{cursor:default!important;pointer-events:none}.p-checkbox-box{align-items:center;display:flex;justify-content:center}p-checkbox{align-items:center;display:inline-flex;vertical-align:bottom}.p-checkbox-label{line-height:1}"], encapsulation: 2, changeDetection: 0 });
+Checkbox.ctorParameters = () => [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] }
+];
+Checkbox.propDecorators = {
+    value: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    name: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    disabled: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    binary: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    label: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    ariaLabelledBy: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    tabindex: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    inputId: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    style: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    styleClass: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    labelStyleClass: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    formControl: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    checkboxIcon: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    readonly: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    required: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    inputViewChild: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"], args: ['cb',] }],
+    onChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"] }]
+};
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](Checkbox, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'p-checkbox',
+                template: `
+        <div [ngStyle]="style" [ngClass]="{'p-checkbox p-component': true, 'p-checkbox-checked': checked, 'p-checkbox-disabled': disabled, 'p-checkbox-focused': focused}" [class]="styleClass">
+            <div class="p-hidden-accessible">
+                <input #cb type="checkbox" [attr.id]="inputId" [attr.name]="name" [readonly]="readonly" [value]="value" [checked]="checked" (focus)="onFocus()" (blur)="onBlur()"
+                (change)="handleChange($event)" [disabled]="disabled" [attr.tabindex]="tabindex" [attr.aria-labelledby]="ariaLabelledBy" [attr.required]="required">
+            </div>
+            <div class="p-checkbox-box" (click)="onClick($event,cb,true)"
+                        [ngClass]="{'p-highlight': checked, 'p-disabled': disabled, 'p-focus': focused}" role="checkbox" [attr.aria-checked]="checked">
+                <span class="p-checkbox-icon" [ngClass]="checked ? checkboxIcon : null"></span>
+            </div>
+        </div>
+        <label (click)="onClick($event,cb,true)" [class]="labelStyleClass"
+                [ngClass]="{'p-checkbox-label': true, 'p-checkbox-label-active':checked, 'p-disabled':disabled, 'p-checkbox-label-focus':focused}"
+                *ngIf="label" [attr.for]="inputId">{{label}}</label>
+    `,
+                providers: [CHECKBOX_VALUE_ACCESSOR],
+                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectionStrategy"].OnPush,
+                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None,
+                styles: [".p-checkbox{-ms-user-select:none;-webkit-user-select:none;cursor:pointer;display:inline-flex;user-select:none;vertical-align:bottom}.p-checkbox-disabled{cursor:default!important;pointer-events:none}.p-checkbox-box{align-items:center;display:flex;justify-content:center}p-checkbox{align-items:center;display:inline-flex;vertical-align:bottom}.p-checkbox-label{line-height:1}"]
+            }]
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] }]; }, { checkboxIcon: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], onChange: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"]
+        }], disabled: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], value: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], name: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], binary: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], label: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], ariaLabelledBy: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], tabindex: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], inputId: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], style: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], styleClass: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], labelStyleClass: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], formControl: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], readonly: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], required: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], inputViewChild: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"],
+            args: ['cb']
+        }] }); })();
+class CheckboxModule {
+}
+CheckboxModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: CheckboxModule });
+CheckboxModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function CheckboxModule_Factory(t) { return new (t || CheckboxModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"]]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](CheckboxModule, { declarations: function () { return [Checkbox]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"]]; }, exports: function () { return [Checkbox]; } }); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](CheckboxModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
+        args: [{
+                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"]],
+                exports: [Checkbox],
+                declarations: [Checkbox]
+            }]
+    }], null, null); })();
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+//# sourceMappingURL=primeng-checkbox.js.map
+
+/***/ }),
+
 /***/ "JmF6":
 /*!*****************************************************************!*\
   !*** ./node_modules/rxjs/_esm2015/internal/operators/zipAll.js ***!
@@ -11707,6 +12445,998 @@ function noop() { }
 
 /***/ }),
 
+/***/ "Ks7X":
+/*!***************************************************************************!*\
+  !*** ./node_modules/primeng/__ivy_ngcc__/fesm2015/primeng-inputnumber.js ***!
+  \***************************************************************************/
+/*! exports provided: INPUTNUMBER_VALUE_ACCESSOR, InputNumber, InputNumberModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "INPUTNUMBER_VALUE_ACCESSOR", function() { return INPUTNUMBER_VALUE_ACCESSOR; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InputNumber", function() { return InputNumber; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InputNumberModule", function() { return InputNumberModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var primeng_inputtext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! primeng/inputtext */ "7kUa");
+/* harmony import */ var primeng_button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! primeng/button */ "jIHw");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+
+
+
+
+
+
+
+
+
+
+
+const _c0 = ["input"];
+const _c1 = function () { return { "p-inputnumber-button p-inputnumber-button-up": true }; };
+const _c2 = function () { return { "p-inputnumber-button p-inputnumber-button-down": true }; };
+function InputNumber_span_3_Template(rf, ctx) { if (rf & 1) {
+    const _r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "span", 5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "button", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("mousedown", function InputNumber_span_3_Template_button_mousedown_1_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r5); const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r4.onUpButtonMouseDown($event); })("mouseup", function InputNumber_span_3_Template_button_mouseup_1_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r5); const ctx_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r6.onUpButtonMouseUp(); })("mouseleave", function InputNumber_span_3_Template_button_mouseleave_1_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r5); const ctx_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r7.onUpButtonMouseLeave(); })("keydown", function InputNumber_span_3_Template_button_keydown_1_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r5); const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r8.onUpButtonKeyDown($event); })("keyup", function InputNumber_span_3_Template_button_keyup_1_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r5); const ctx_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r9.onUpButtonKeyUp(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "button", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("mousedown", function InputNumber_span_3_Template_button_mousedown_2_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r5); const ctx_r10 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r10.onDownButtonMouseDown($event); })("mouseup", function InputNumber_span_3_Template_button_mouseup_2_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r5); const ctx_r11 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r11.onDownButtonMouseUp(); })("mouseleave", function InputNumber_span_3_Template_button_mouseleave_2_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r5); const ctx_r12 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r12.onDownButtonMouseLeave(); })("keydown", function InputNumber_span_3_Template_button_keydown_2_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r5); const ctx_r13 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r13.onDownButtonKeyDown($event); })("keyup", function InputNumber_span_3_Template_button_keyup_2_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r5); const ctx_r14 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r14.onDownButtonKeyUp(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMap"](ctx_r1.incrementButtonClass);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](10, _c1))("icon", ctx_r1.incrementButtonIcon)("disabled", ctx_r1.disabled);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMap"](ctx_r1.decrementButtonClass);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](11, _c2))("icon", ctx_r1.decrementButtonIcon)("disabled", ctx_r1.disabled);
+} }
+function InputNumber_button_4_Template(rf, ctx) { if (rf & 1) {
+    const _r16 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("mousedown", function InputNumber_button_4_Template_button_mousedown_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r16); const ctx_r15 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r15.onUpButtonMouseDown($event); })("mouseup", function InputNumber_button_4_Template_button_mouseup_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r16); const ctx_r17 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r17.onUpButtonMouseUp(); })("mouseleave", function InputNumber_button_4_Template_button_mouseleave_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r16); const ctx_r18 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r18.onUpButtonMouseLeave(); })("keydown", function InputNumber_button_4_Template_button_keydown_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r16); const ctx_r19 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r19.onUpButtonKeyDown($event); })("keyup", function InputNumber_button_4_Template_button_keyup_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r16); const ctx_r20 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r20.onUpButtonKeyUp(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMap"](ctx_r2.incrementButtonClass);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](5, _c1))("icon", ctx_r2.incrementButtonIcon)("disabled", ctx_r2.disabled);
+} }
+function InputNumber_button_5_Template(rf, ctx) { if (rf & 1) {
+    const _r22 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("mousedown", function InputNumber_button_5_Template_button_mousedown_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r22); const ctx_r21 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r21.onDownButtonMouseDown($event); })("mouseup", function InputNumber_button_5_Template_button_mouseup_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r22); const ctx_r23 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r23.onDownButtonMouseUp(); })("mouseleave", function InputNumber_button_5_Template_button_mouseleave_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r22); const ctx_r24 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r24.onDownButtonMouseLeave(); })("keydown", function InputNumber_button_5_Template_button_keydown_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r22); const ctx_r25 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r25.onDownButtonKeyDown($event); })("keyup", function InputNumber_button_5_Template_button_keyup_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r22); const ctx_r26 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r26.onDownButtonKeyUp(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMap"](ctx_r3.decrementButtonClass);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](5, _c2))("icon", ctx_r3.decrementButtonIcon)("disabled", ctx_r3.disabled);
+} }
+const _c3 = function (a1, a2, a3) { return { "p-inputnumber p-component": true, "p-inputnumber-buttons-stacked": a1, "p-inputnumber-buttons-horizontal": a2, "p-inputnumber-buttons-vertical": a3 }; };
+const INPUTNUMBER_VALUE_ACCESSOR = {
+    provide: _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NG_VALUE_ACCESSOR"],
+    useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["forwardRef"])(() => InputNumber),
+    multi: true
+};
+class InputNumber {
+    constructor(el, cd) {
+        this.el = el;
+        this.cd = cd;
+        this.showButtons = false;
+        this.format = true;
+        this.buttonLayout = "stacked";
+        this.incrementButtonIcon = 'pi pi-angle-up';
+        this.decrementButtonIcon = 'pi pi-angle-down';
+        this.step = 1;
+        this.onInput = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        this.onFocus = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        this.onBlur = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        this.onKeyDown = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        this.onModelChange = () => { };
+        this.onModelTouched = () => { };
+        this.groupChar = '';
+        this.prefixChar = '';
+        this.suffixChar = '';
+        this._modeOption = "decimal";
+        this._useGroupingOption = true;
+    }
+    get locale() {
+        return this._localeOption;
+    }
+    set locale(localeOption) {
+        this._localeOption = localeOption;
+        this.updateConstructParser();
+    }
+    get localeMatcher() {
+        return this._localeMatcherOption;
+    }
+    set localeMatcher(localeMatcherOption) {
+        this._localeMatcherOption = localeMatcherOption;
+        this.updateConstructParser();
+    }
+    get mode() {
+        return this._modeOption;
+    }
+    set mode(modeOption) {
+        this._modeOption = modeOption;
+        this.updateConstructParser();
+    }
+    get currency() {
+        return this._currencyOption;
+    }
+    set currency(currencyOption) {
+        this._currencyOption = currencyOption;
+        this.updateConstructParser();
+    }
+    get currencyDisplay() {
+        return this._currencyDisplayOption;
+    }
+    set currencyDisplay(currencyDisplayOption) {
+        this._currencyDisplayOption = currencyDisplayOption;
+        this.updateConstructParser();
+    }
+    get useGrouping() {
+        return this._useGroupingOption;
+    }
+    set useGrouping(useGroupingOption) {
+        this._useGroupingOption = useGroupingOption;
+        this.updateConstructParser();
+    }
+    get minFractionDigits() {
+        return this._minFractionDigitsOption;
+    }
+    set minFractionDigits(minFractionDigitsOption) {
+        this._minFractionDigitsOption = minFractionDigitsOption;
+        this.updateConstructParser();
+    }
+    get maxFractionDigits() {
+        return this._maxFractionDigitsOption;
+    }
+    set maxFractionDigits(maxFractionDigitsOption) {
+        this._maxFractionDigitsOption = maxFractionDigitsOption;
+        this.updateConstructParser();
+    }
+    get prefix() {
+        return this._prefixOption;
+    }
+    set prefix(prefixOption) {
+        this._prefixOption = prefixOption;
+        this.updateConstructParser();
+    }
+    get suffix() {
+        return this._suffixOption;
+    }
+    set suffix(suffixOption) {
+        this._suffixOption = suffixOption;
+        this.updateConstructParser();
+    }
+    ngOnInit() {
+        this.constructParser();
+        this.initialized = true;
+    }
+    getOptions() {
+        return {
+            localeMatcher: this.localeMatcher,
+            style: this.mode,
+            currency: this.currency,
+            currencyDisplay: this.currencyDisplay,
+            useGrouping: this.useGrouping,
+            minimumFractionDigits: this.minFractionDigits,
+            maximumFractionDigits: this.maxFractionDigits
+        };
+    }
+    constructParser() {
+        this.numberFormat = new Intl.NumberFormat(this.locale, this.getOptions());
+        const numerals = [...new Intl.NumberFormat(this.locale, { useGrouping: false }).format(9876543210)].reverse();
+        const index = new Map(numerals.map((d, i) => [d, i]));
+        this._numeral = new RegExp(`[${numerals.join('')}]`, 'g');
+        this._decimal = this.getDecimalExpression();
+        this._group = this.getGroupingExpression();
+        this._minusSign = this.getMinusSignExpression();
+        this._currency = this.getCurrencyExpression();
+        this._suffix = this.getSuffixExpression();
+        this._prefix = this.getPrefixExpression();
+        this._index = d => index.get(d);
+    }
+    updateConstructParser() {
+        if (this.initialized) {
+            this.constructParser();
+        }
+    }
+    escapeRegExp(text) {
+        return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
+    }
+    getDecimalExpression() {
+        const formatter = new Intl.NumberFormat(this.locale, { useGrouping: false });
+        return new RegExp(`[${formatter.format(1.1).trim().replace(this._numeral, '')}]`, 'g');
+    }
+    getGroupingExpression() {
+        const formatter = new Intl.NumberFormat(this.locale, { useGrouping: true });
+        this.groupChar = formatter.format(1000000).trim().replace(this._numeral, '').charAt(0);
+        return new RegExp(`[${this.groupChar}]`, 'g');
+    }
+    getMinusSignExpression() {
+        const formatter = new Intl.NumberFormat(this.locale, { useGrouping: false });
+        return new RegExp(`[${formatter.format(-1).trim().replace(this._numeral, '')}]`, 'g');
+    }
+    getCurrencyExpression() {
+        if (this.currency) {
+            const formatter = new Intl.NumberFormat(this.locale, { style: 'currency', currency: this.currency, currencyDisplay: this.currencyDisplay });
+            return new RegExp(`[${formatter.format(1).replace(/\s/g, '').replace(this._numeral, '').replace(this._decimal, '').replace(this._group, '')}]`, 'g');
+        }
+        return new RegExp(`[]`, 'g');
+    }
+    getPrefixExpression() {
+        if (this.prefix) {
+            this.prefixChar = this.prefix;
+        }
+        else {
+            const formatter = new Intl.NumberFormat(this.locale, { style: this.mode, currency: this.currency, currencyDisplay: this.currencyDisplay });
+            this.prefixChar = formatter.format(1).split('1')[0];
+        }
+        return new RegExp(`${this.escapeRegExp(this.prefixChar || '')}`, 'g');
+    }
+    getSuffixExpression() {
+        if (this.suffix) {
+            this.suffixChar = this.suffix;
+        }
+        else {
+            const formatter = new Intl.NumberFormat(this.locale, { style: this.mode, currency: this.currency, currencyDisplay: this.currencyDisplay,
+                minimumFractionDigits: 0, maximumFractionDigits: 0 });
+            this.suffixChar = formatter.format(1).split('1')[1];
+        }
+        return new RegExp(`${this.escapeRegExp(this.suffixChar || '')}`, 'g');
+    }
+    formatValue(value) {
+        if (value != null) {
+            if (value === '-') { // Minus sign
+                return value;
+            }
+            if (this.format) {
+                let formatter = new Intl.NumberFormat(this.locale, this.getOptions());
+                let formattedValue = formatter.format(value);
+                if (this.prefix) {
+                    formattedValue = this.prefix + formattedValue;
+                }
+                if (this.suffix) {
+                    formattedValue = formattedValue + this.suffix;
+                }
+                return formattedValue;
+            }
+            return value.toString();
+        }
+        return '';
+    }
+    parseValue(text) {
+        let filteredText = text
+            .replace(this._suffix, '')
+            .replace(this._prefix, '')
+            .trim()
+            .replace(/\s/g, '')
+            .replace(this._currency, '')
+            .replace(this._group, '')
+            .replace(this._minusSign, '-')
+            .replace(this._decimal, '.')
+            .replace(this._numeral, this._index);
+        if (filteredText) {
+            if (filteredText === '-') // Minus sign
+                return filteredText;
+            let parsedValue = +filteredText;
+            return isNaN(parsedValue) ? null : parsedValue;
+        }
+        return null;
+    }
+    repeat(event, interval, dir) {
+        let i = interval || 500;
+        this.clearTimer();
+        this.timer = setTimeout(() => {
+            this.repeat(event, 40, dir);
+        }, i);
+        this.spin(event, dir);
+    }
+    spin(event, dir) {
+        let step = this.step * dir;
+        let currentValue = this.parseValue(this.input.nativeElement.value) || 0;
+        let newValue = this.validateValue(currentValue + step);
+        if (this.maxlength && this.maxlength < this.formatValue(newValue).length) {
+            return;
+        }
+        this.updateInput(newValue, null, 'spin');
+        this.updateModel(event, newValue);
+        this.handleOnInput(event, currentValue, newValue);
+    }
+    onUpButtonMouseDown(event) {
+        this.input.nativeElement.focus();
+        this.repeat(event, null, 1);
+        event.preventDefault();
+    }
+    onUpButtonMouseUp() {
+        this.clearTimer();
+    }
+    onUpButtonMouseLeave() {
+        this.clearTimer();
+    }
+    onUpButtonKeyDown(event) {
+        if (event.keyCode === 32 || event.keyCode === 13) {
+            this.repeat(event, null, 1);
+        }
+    }
+    onUpButtonKeyUp() {
+        this.clearTimer();
+    }
+    onDownButtonMouseDown(event) {
+        this.input.nativeElement.focus();
+        this.repeat(event, null, -1);
+        event.preventDefault();
+    }
+    onDownButtonMouseUp() {
+        this.clearTimer();
+    }
+    onDownButtonMouseLeave() {
+        this.clearTimer();
+    }
+    onDownButtonKeyUp() {
+        this.clearTimer();
+    }
+    onDownButtonKeyDown(event) {
+        if (event.keyCode === 32 || event.keyCode === 13) {
+            this.repeat(event, null, -1);
+        }
+    }
+    onUserInput(event) {
+        if (this.isSpecialChar) {
+            event.target.value = this.lastValue;
+        }
+        this.isSpecialChar = false;
+    }
+    onInputKeyDown(event) {
+        this.lastValue = event.target.value;
+        if (event.shiftKey || event.altKey) {
+            this.isSpecialChar = true;
+            return;
+        }
+        let selectionStart = event.target.selectionStart;
+        let selectionEnd = event.target.selectionEnd;
+        let inputValue = event.target.value;
+        let newValueStr = null;
+        if (event.altKey) {
+            event.preventDefault();
+        }
+        switch (event.which) {
+            //up
+            case 38:
+                this.spin(event, 1);
+                event.preventDefault();
+                break;
+            //down
+            case 40:
+                this.spin(event, -1);
+                event.preventDefault();
+                break;
+            //left
+            case 37:
+                if (!this.isNumeralChar(inputValue.charAt(selectionStart - 1))) {
+                    event.preventDefault();
+                }
+                break;
+            //right
+            case 39:
+                if (!this.isNumeralChar(inputValue.charAt(selectionStart))) {
+                    event.preventDefault();
+                }
+                break;
+            //enter
+            case 13:
+                let newValue = this.validateValue(this.parseValue(this.input.nativeElement.value));
+                this.input.nativeElement.value = this.formatValue(newValue);
+                this.input.nativeElement.setAttribute('aria-valuenow', newValue);
+                this.updateModel(event, newValue);
+                break;
+            //backspace
+            case 8: {
+                event.preventDefault();
+                if (selectionStart === selectionEnd) {
+                    let deleteChar = inputValue.charAt(selectionStart - 1);
+                    let decimalCharIndex = inputValue.search(this._decimal);
+                    this._decimal.lastIndex = 0;
+                    if (this.isNumeralChar(deleteChar)) {
+                        if (this._group.test(deleteChar)) {
+                            this._group.lastIndex = 0;
+                            newValueStr = inputValue.slice(0, selectionStart - 2) + inputValue.slice(selectionStart - 1);
+                        }
+                        else if (this._decimal.test(deleteChar)) {
+                            this._decimal.lastIndex = 0;
+                            this.input.nativeElement.setSelectionRange(selectionStart - 1, selectionStart - 1);
+                        }
+                        else if (decimalCharIndex > 0 && selectionStart > decimalCharIndex) {
+                            newValueStr = inputValue.slice(0, selectionStart - 1) + '0' + inputValue.slice(selectionStart);
+                        }
+                        else if (decimalCharIndex > 0 && decimalCharIndex === 1) {
+                            newValueStr = inputValue.slice(0, selectionStart - 1) + '0' + inputValue.slice(selectionStart);
+                            newValueStr = this.parseValue(newValueStr) > 0 ? newValueStr : '';
+                        }
+                        else {
+                            newValueStr = inputValue.slice(0, selectionStart - 1) + inputValue.slice(selectionStart);
+                        }
+                    }
+                    this.updateValue(event, newValueStr, null, 'delete-single');
+                }
+                else {
+                    newValueStr = this.deleteRange(inputValue, selectionStart, selectionEnd);
+                    this.updateValue(event, newValueStr, null, 'delete-range');
+                }
+                break;
+            }
+            // del
+            case 46:
+                event.preventDefault();
+                if (selectionStart === selectionEnd) {
+                    let deleteChar = inputValue.charAt(selectionStart);
+                    let decimalCharIndex = inputValue.search(this._decimal);
+                    this._decimal.lastIndex = 0;
+                    if (this.isNumeralChar(deleteChar)) {
+                        if (this._group.test(deleteChar)) {
+                            this._group.lastIndex = 0;
+                            newValueStr = inputValue.slice(0, selectionStart) + inputValue.slice(selectionStart + 2);
+                        }
+                        else if (this._decimal.test(deleteChar)) {
+                            this._decimal.lastIndex = 0;
+                            this.input.nativeElement.setSelectionRange(selectionStart + 1, selectionStart + 1);
+                        }
+                        else if (decimalCharIndex > 0 && selectionStart > decimalCharIndex) {
+                            newValueStr = inputValue.slice(0, selectionStart) + '0' + inputValue.slice(selectionStart + 1);
+                        }
+                        else if (decimalCharIndex > 0 && decimalCharIndex === 1) {
+                            newValueStr = inputValue.slice(0, selectionStart) + '0' + inputValue.slice(selectionStart + 1);
+                            newValueStr = this.parseValue(newValueStr) > 0 ? newValueStr : '';
+                        }
+                        else {
+                            newValueStr = inputValue.slice(0, selectionStart) + inputValue.slice(selectionStart + 1);
+                        }
+                    }
+                    this.updateValue(event, newValueStr, null, 'delete-back-single');
+                }
+                else {
+                    newValueStr = this.deleteRange(inputValue, selectionStart, selectionEnd);
+                    this.updateValue(event, newValueStr, null, 'delete-range');
+                }
+                break;
+            default:
+                break;
+        }
+        this.onKeyDown.emit(event);
+    }
+    onInputKeyPress(event) {
+        event.preventDefault();
+        let code = event.which || event.keyCode;
+        let char = String.fromCharCode(code);
+        const isDecimalSign = this.isDecimalSign(char);
+        const isMinusSign = this.isMinusSign(char);
+        if ((48 <= code && code <= 57) || isMinusSign || isDecimalSign) {
+            this.insert(event, char, { isDecimalSign, isMinusSign });
+        }
+    }
+    onPaste(event) {
+        event.preventDefault();
+        let data = (event.clipboardData || window['clipboardData']).getData('Text');
+        if (data) {
+            let filteredData = this.parseValue(data);
+            if (filteredData != null) {
+                this.insert(event, filteredData.toString());
+            }
+        }
+    }
+    isMinusSign(char) {
+        if (this._minusSign.test(char)) {
+            this._minusSign.lastIndex = 0;
+            return true;
+        }
+        return false;
+    }
+    isDecimalSign(char) {
+        if (this._decimal.test(char)) {
+            this._decimal.lastIndex = 0;
+            return true;
+        }
+        return false;
+    }
+    insert(event, text, sign = { isDecimalSign: false, isMinusSign: false }) {
+        let selectionStart = this.input.nativeElement.selectionStart;
+        let selectionEnd = this.input.nativeElement.selectionEnd;
+        let inputValue = this.input.nativeElement.value.trim();
+        const decimalCharIndex = inputValue.search(this._decimal);
+        this._decimal.lastIndex = 0;
+        const minusCharIndex = inputValue.search(this._minusSign);
+        this._minusSign.lastIndex = 0;
+        let newValueStr;
+        if (sign.isMinusSign) {
+            if (selectionStart === 0) {
+                newValueStr = inputValue;
+                if (minusCharIndex === -1 || selectionEnd !== 0) {
+                    newValueStr = this.insertText(inputValue, text, 0, selectionEnd);
+                }
+                this.updateValue(event, newValueStr, text, 'insert');
+            }
+        }
+        else if (sign.isDecimalSign) {
+            if (decimalCharIndex > 0 && selectionStart === decimalCharIndex) {
+                this.updateValue(event, inputValue, text, 'insert');
+            }
+            else if (decimalCharIndex > selectionStart && decimalCharIndex < selectionEnd) {
+                newValueStr = this.insertText(inputValue, text, selectionStart, selectionEnd);
+                this.updateValue(event, newValueStr, text, 'insert');
+            }
+        }
+        else {
+            const maxFractionDigits = this.numberFormat.resolvedOptions().maximumFractionDigits;
+            const operation = selectionStart !== selectionEnd ? 'range-insert' : 'insert';
+            if (decimalCharIndex > 0 && selectionStart > decimalCharIndex) {
+                if ((selectionStart + text.length - (decimalCharIndex + 1)) <= maxFractionDigits) {
+                    newValueStr = inputValue.slice(0, selectionStart) + text + inputValue.slice(selectionStart + text.length);
+                    this.updateValue(event, newValueStr, text, operation);
+                }
+            }
+            else {
+                newValueStr = this.insertText(inputValue, text, selectionStart, selectionEnd);
+                this.updateValue(event, newValueStr, text, operation);
+            }
+        }
+    }
+    insertText(value, text, start, end) {
+        let textSplit = text.split('.');
+        if (textSplit.length == 2) {
+            const decimalCharIndex = value.slice(start, end).search(this._decimal);
+            this._decimal.lastIndex = 0;
+            return (decimalCharIndex > 0) ? value.slice(0, start) + this.formatValue(text) + value.slice(end) : (value || this.formatValue(text));
+        }
+        else if ((end - start) === value.length) {
+            return this.formatValue(text);
+        }
+        else if (start === 0) {
+            return text + value.slice(end);
+        }
+        else if (end === value.length) {
+            return value.slice(0, start) + text;
+        }
+        else {
+            return value.slice(0, start) + text + value.slice(end);
+        }
+    }
+    deleteRange(value, start, end) {
+        let newValueStr;
+        if ((end - start) === value.length)
+            newValueStr = '';
+        else if (start === 0)
+            newValueStr = value.slice(end);
+        else if (end === value.length)
+            newValueStr = value.slice(0, start);
+        else
+            newValueStr = value.slice(0, start) + value.slice(end);
+        return newValueStr;
+    }
+    initCursor() {
+        let selectionStart = this.input.nativeElement.selectionStart;
+        let inputValue = this.input.nativeElement.value;
+        let valueLength = inputValue.length;
+        let index = null;
+        let char = inputValue.charAt(selectionStart);
+        if (this.isNumeralChar(char)) {
+            return;
+        }
+        //left
+        let i = selectionStart - 1;
+        while (i >= 0) {
+            char = inputValue.charAt(i);
+            if (this.isNumeralChar(char)) {
+                index = i;
+                break;
+            }
+            else {
+                i--;
+            }
+        }
+        if (index !== null) {
+            this.input.nativeElement.setSelectionRange(index + 1, index + 1);
+        }
+        else {
+            i = selectionStart + 1;
+            while (i < valueLength) {
+                char = inputValue.charAt(i);
+                if (this.isNumeralChar(char)) {
+                    index = i;
+                    break;
+                }
+                else {
+                    i++;
+                }
+            }
+            if (index !== null) {
+                this.input.nativeElement.setSelectionRange(index, index);
+            }
+        }
+    }
+    onInputClick() {
+        this.initCursor();
+    }
+    isNumeralChar(char) {
+        if (char.length === 1 && (this._numeral.test(char) || this._decimal.test(char) || this._group.test(char) || this._minusSign.test(char))) {
+            this.resetRegex();
+            return true;
+        }
+        return false;
+    }
+    resetRegex() {
+        this._numeral.lastIndex = 0;
+        this._decimal.lastIndex = 0;
+        this._group.lastIndex = 0;
+        this._minusSign.lastIndex = 0;
+    }
+    updateValue(event, valueStr, insertedValueStr, operation) {
+        let currentValue = this.input.nativeElement.value;
+        let newValue = null;
+        if (valueStr != null) {
+            newValue = this.parseValue(valueStr);
+            this.updateInput(newValue, insertedValueStr, operation);
+        }
+        this.handleOnInput(event, currentValue, newValue);
+    }
+    handleOnInput(event, currentValue, newValue) {
+        if (this.isValueChanged(currentValue, newValue)) {
+            this.onInput.emit({ originalEvent: event, value: newValue });
+        }
+    }
+    isValueChanged(currentValue, newValue) {
+        if (newValue === null && currentValue !== null) {
+            return true;
+        }
+        if (newValue != null) {
+            let parsedCurrentValue = (typeof currentValue === 'string') ? this.parseValue(currentValue) : currentValue;
+            return newValue !== parsedCurrentValue;
+        }
+        return false;
+    }
+    validateValue(value) {
+        if (this.min !== null && value < this.min) {
+            return this.min;
+        }
+        if (this.max !== null && value > this.max) {
+            return this.max;
+        }
+        if (value === '-') { // Minus sign
+            return null;
+        }
+        return value;
+    }
+    updateInput(value, insertedValueStr, operation) {
+        insertedValueStr = insertedValueStr || '';
+        let inputValue = this.input.nativeElement.value;
+        let newValue = this.formatValue(value);
+        let currentLength = inputValue.length;
+        if (currentLength === 0) {
+            this.input.nativeElement.value = newValue;
+            this.input.nativeElement.setSelectionRange(0, 0);
+            this.initCursor();
+            const prefixLength = (this.prefixChar || '').length;
+            const selectionEnd = prefixLength + insertedValueStr.length;
+            this.input.nativeElement.setSelectionRange(selectionEnd, selectionEnd);
+        }
+        else {
+            let selectionStart = this.input.nativeElement.selectionStart;
+            let selectionEnd = this.input.nativeElement.selectionEnd;
+            if (this.maxlength && this.maxlength < newValue.length) {
+                return;
+            }
+            this.input.nativeElement.value = newValue;
+            let newLength = newValue.length;
+            if (operation === 'range-insert') {
+                const startValue = this.parseValue((inputValue || '').slice(0, selectionStart));
+                const startValueStr = startValue !== null ? startValue.toString() : '';
+                const startExpr = startValueStr.split('').join(`(${this.groupChar})?`);
+                const sRegex = new RegExp(startExpr, 'g');
+                sRegex.test(newValue);
+                const tExpr = insertedValueStr.split('').join(`(${this.groupChar})?`);
+                const tRegex = new RegExp(tExpr, 'g');
+                tRegex.test(newValue.slice(sRegex.lastIndex));
+                selectionEnd = sRegex.lastIndex + tRegex.lastIndex;
+                this.input.nativeElement.setSelectionRange(selectionEnd, selectionEnd);
+            }
+            else if (newLength === currentLength) {
+                if (operation === 'insert' || operation === 'delete-back-single')
+                    this.input.nativeElement.setSelectionRange(selectionEnd + 1, selectionEnd + 1);
+                else if (operation === 'delete-single')
+                    this.input.nativeElement.setSelectionRange(selectionEnd - 1, selectionEnd - 1);
+                else if (operation === 'delete-range' || operation === 'spin')
+                    this.input.nativeElement.setSelectionRange(selectionEnd, selectionEnd);
+            }
+            else if (operation === 'delete-back-single') {
+                let prevChar = inputValue.charAt(selectionEnd - 1);
+                let nextChar = inputValue.charAt(selectionEnd);
+                let diff = currentLength - newLength;
+                let isGroupChar = this._group.test(nextChar);
+                if (isGroupChar && diff === 1) {
+                    selectionEnd += 1;
+                }
+                else if (!isGroupChar && this.isNumeralChar(prevChar)) {
+                    selectionEnd += (-1 * diff) + 1;
+                }
+                this._group.lastIndex = 0;
+                this.input.nativeElement.setSelectionRange(selectionEnd, selectionEnd);
+            }
+            else {
+                selectionEnd = selectionEnd + (newLength - currentLength);
+                this.input.nativeElement.setSelectionRange(selectionEnd, selectionEnd);
+            }
+        }
+        this.input.nativeElement.setAttribute('aria-valuenow', value);
+    }
+    onInputFocus(event) {
+        this.focused = true;
+        this.onFocus.emit(event);
+    }
+    onInputBlur(event) {
+        this.focused = false;
+        let newValue = this.validateValue(this.parseValue(this.input.nativeElement.value));
+        this.input.nativeElement.value = this.formatValue(newValue);
+        this.input.nativeElement.setAttribute('aria-valuenow', newValue);
+        this.updateModel(event, newValue);
+        this.onBlur.emit(event);
+    }
+    formattedValue() {
+        return this.formatValue(this.value);
+    }
+    updateModel(event, value) {
+        if (this.value !== value) {
+            this.value = value;
+            this.onModelChange(value);
+        }
+        this.onModelTouched();
+    }
+    writeValue(value) {
+        this.value = value;
+        this.cd.markForCheck();
+    }
+    registerOnChange(fn) {
+        this.onModelChange = fn;
+    }
+    registerOnTouched(fn) {
+        this.onModelTouched = fn;
+    }
+    setDisabledState(val) {
+        this.disabled = val;
+        this.cd.markForCheck();
+    }
+    get filled() {
+        return (this.value != null && this.value.toString().length > 0);
+    }
+    clearTimer() {
+        if (this.timer) {
+            clearInterval(this.timer);
+        }
+    }
+}
+InputNumber.ɵfac = function InputNumber_Factory(t) { return new (t || InputNumber)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"])); };
+InputNumber.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: InputNumber, selectors: [["p-inputNumber"]], viewQuery: function InputNumber_Query(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_c0, true);
+    } if (rf & 2) {
+        var _t;
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.input = _t.first);
+    } }, hostVars: 4, hostBindings: function InputNumber_HostBindings(rf, ctx) { if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("p-inputwrapper-filled", ctx.filled)("p-inputwrapper-focus", ctx.focused);
+    } }, inputs: { showButtons: "showButtons", format: "format", buttonLayout: "buttonLayout", incrementButtonIcon: "incrementButtonIcon", decrementButtonIcon: "decrementButtonIcon", step: "step", locale: "locale", localeMatcher: "localeMatcher", mode: "mode", currency: "currency", currencyDisplay: "currencyDisplay", useGrouping: "useGrouping", minFractionDigits: "minFractionDigits", maxFractionDigits: "maxFractionDigits", prefix: "prefix", suffix: "suffix", disabled: "disabled", inputId: "inputId", styleClass: "styleClass", style: "style", placeholder: "placeholder", size: "size", maxlength: "maxlength", tabindex: "tabindex", title: "title", ariaLabel: "ariaLabel", ariaRequired: "ariaRequired", name: "name", required: "required", autocomplete: "autocomplete", min: "min", max: "max", incrementButtonClass: "incrementButtonClass", decrementButtonClass: "decrementButtonClass", inputStyle: "inputStyle", inputStyleClass: "inputStyleClass" }, outputs: { onInput: "onInput", onFocus: "onFocus", onBlur: "onBlur", onKeyDown: "onKeyDown" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵProvidersFeature"]([INPUTNUMBER_VALUE_ACCESSOR])], decls: 6, vars: 30, consts: [[3, "ngClass", "ngStyle"], ["pInputText", "", 3, "ngClass", "ngStyle", "value", "disabled", "input", "keydown", "keypress", "paste", "click", "focus", "blur"], ["input", ""], ["class", "p-inputnumber-button-group", 4, "ngIf"], ["type", "button", "pButton", "", 3, "ngClass", "class", "icon", "disabled", "mousedown", "mouseup", "mouseleave", "keydown", "keyup", 4, "ngIf"], [1, "p-inputnumber-button-group"], ["type", "button", "pButton", "", 3, "ngClass", "icon", "disabled", "mousedown", "mouseup", "mouseleave", "keydown", "keyup"]], template: function InputNumber_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "span", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "input", 1, 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("input", function InputNumber_Template_input_input_1_listener($event) { return ctx.onUserInput($event); })("keydown", function InputNumber_Template_input_keydown_1_listener($event) { return ctx.onInputKeyDown($event); })("keypress", function InputNumber_Template_input_keypress_1_listener($event) { return ctx.onInputKeyPress($event); })("paste", function InputNumber_Template_input_paste_1_listener($event) { return ctx.onPaste($event); })("click", function InputNumber_Template_input_click_1_listener() { return ctx.onInputClick(); })("focus", function InputNumber_Template_input_focus_1_listener($event) { return ctx.onInputFocus($event); })("blur", function InputNumber_Template_input_blur_1_listener($event) { return ctx.onInputBlur($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, InputNumber_span_3_Template, 3, 12, "span", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, InputNumber_button_4_Template, 1, 6, "button", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, InputNumber_button_5_Template, 1, 6, "button", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMap"](ctx.styleClass);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction3"](26, _c3, ctx.showButtons && ctx.buttonLayout === "stacked", ctx.showButtons && ctx.buttonLayout === "horizontal", ctx.showButtons && ctx.buttonLayout === "vertical"))("ngStyle", ctx.style);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMap"](ctx.inputStyleClass);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", "p-inputnumber-input")("ngStyle", ctx.inputStyle)("value", ctx.formattedValue())("disabled", ctx.disabled);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("placeholder", ctx.placeholder)("title", ctx.title)("id", ctx.inputId)("size", ctx.size)("name", ctx.name)("autocomplete", ctx.autocomplete)("maxlength", ctx.maxlength)("tabindex", ctx.tabindex)("aria-label", ctx.ariaLabel)("aria-required", ctx.ariaRequired)("required", ctx.required)("aria-valumin", ctx.min)("aria-valuemax", ctx.max);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.showButtons && ctx.buttonLayout === "stacked");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.showButtons && ctx.buttonLayout !== "stacked");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.showButtons && ctx.buttonLayout !== "stacked");
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["NgClass"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgStyle"], primeng_inputtext__WEBPACK_IMPORTED_MODULE_2__["InputText"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgIf"], primeng_button__WEBPACK_IMPORTED_MODULE_3__["ButtonDirective"]], styles: [".p-inputnumber{display:inline-flex}.p-inputnumber-button{align-items:center;display:flex;flex:0 0 auto;justify-content:center}.p-inputnumber-buttons-horizontal .p-button.p-inputnumber-button .p-button-label,.p-inputnumber-buttons-stacked .p-button.p-inputnumber-button .p-button-label{display:none}.p-inputnumber-buttons-stacked .p-button.p-inputnumber-button-up{border-bottom-left-radius:0;border-bottom-right-radius:0;border-top-left-radius:0;padding:0}.p-inputnumber-buttons-stacked .p-inputnumber-input{border-bottom-right-radius:0;border-top-right-radius:0}.p-inputnumber-buttons-stacked .p-button.p-inputnumber-button-down{border-bottom-left-radius:0;border-top-left-radius:0;border-top-right-radius:0;padding:0}.p-inputnumber-buttons-stacked .p-inputnumber-button-group{display:flex;flex-direction:column}.p-inputnumber-buttons-stacked .p-inputnumber-button-group .p-button.p-inputnumber-button{flex:1 1 auto}.p-inputnumber-buttons-horizontal .p-button.p-inputnumber-button-up{border-bottom-left-radius:0;border-top-left-radius:0;order:3}.p-inputnumber-buttons-horizontal .p-inputnumber-input{border-radius:0;order:2}.p-inputnumber-buttons-horizontal .p-button.p-inputnumber-button-down{border-bottom-right-radius:0;border-top-right-radius:0;order:1}.p-inputnumber-buttons-vertical{flex-direction:column}.p-inputnumber-buttons-vertical .p-button.p-inputnumber-button-up{border-bottom-left-radius:0;border-bottom-right-radius:0;order:1;width:100%}.p-inputnumber-buttons-vertical .p-inputnumber-input{border-radius:0;order:2;text-align:center}.p-inputnumber-buttons-vertical .p-button.p-inputnumber-button-down{border-top-left-radius:0;border-top-right-radius:0;order:3;width:100%}.p-inputnumber-input{flex:1 1 auto}.p-fluid .p-inputnumber{width:100%}.p-fluid .p-inputnumber .p-inputnumber-input{width:1%}.p-fluid .p-inputnumber-buttons-vertical .p-inputnumber-input{width:100%}"], encapsulation: 2, changeDetection: 0 });
+InputNumber.ctorParameters = () => [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"] },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] }
+];
+InputNumber.propDecorators = {
+    showButtons: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    format: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    buttonLayout: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    disabled: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    inputId: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    styleClass: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    style: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    placeholder: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    size: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    maxlength: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    tabindex: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    title: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    ariaLabel: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    ariaRequired: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    name: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    required: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    autocomplete: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    min: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    max: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    incrementButtonClass: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    decrementButtonClass: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    incrementButtonIcon: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    decrementButtonIcon: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    step: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    inputStyle: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    inputStyleClass: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    input: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"], args: ['input',] }],
+    onInput: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"] }],
+    onFocus: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"] }],
+    onBlur: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"] }],
+    onKeyDown: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"] }],
+    locale: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    localeMatcher: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    mode: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    currency: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    currencyDisplay: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    useGrouping: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    minFractionDigits: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    maxFractionDigits: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    prefix: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    suffix: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }]
+};
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](InputNumber, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'p-inputNumber',
+                template: `
+        <span [ngClass]="{'p-inputnumber p-component': true,'p-inputnumber-buttons-stacked': this.showButtons && this.buttonLayout === 'stacked',
+                'p-inputnumber-buttons-horizontal': this.showButtons && this.buttonLayout === 'horizontal', 'p-inputnumber-buttons-vertical': this.showButtons && this.buttonLayout === 'vertical'}"
+                [ngStyle]="style" [class]="styleClass">
+            <input #input [ngClass]="'p-inputnumber-input'" [ngStyle]="inputStyle" [class]="inputStyleClass" pInputText [value]="formattedValue()" [attr.placeholder]="placeholder" [attr.title]="title" [attr.id]="inputId"
+                [attr.size]="size" [attr.name]="name" [attr.autocomplete]="autocomplete" [attr.maxlength]="maxlength" [attr.tabindex]="tabindex" [attr.aria-label]="ariaLabel"
+                [attr.aria-required]="ariaRequired" [disabled]="disabled" [attr.required]="required" [attr.aria-valumin]="min" [attr.aria-valuemax]="max"
+                (input)="onUserInput($event)" (keydown)="onInputKeyDown($event)" (keypress)="onInputKeyPress($event)" (paste)="onPaste($event)" (click)="onInputClick()"
+                (focus)="onInputFocus($event)" (blur)="onInputBlur($event)">
+            <span class="p-inputnumber-button-group" *ngIf="showButtons && buttonLayout === 'stacked'">
+                <button type="button" pButton [ngClass]="{'p-inputnumber-button p-inputnumber-button-up': true}" [class]="incrementButtonClass" [icon]="incrementButtonIcon" [disabled]="disabled"
+                    (mousedown)="this.onUpButtonMouseDown($event)" (mouseup)="onUpButtonMouseUp()" (mouseleave)="onUpButtonMouseLeave()" (keydown)="onUpButtonKeyDown($event)" (keyup)="onUpButtonKeyUp()"></button>
+                <button type="button" pButton [ngClass]="{'p-inputnumber-button p-inputnumber-button-down': true}" [class]="decrementButtonClass" [icon]="decrementButtonIcon" [disabled]="disabled"
+                    (mousedown)="this.onDownButtonMouseDown($event)" (mouseup)="onDownButtonMouseUp()" (mouseleave)="onDownButtonMouseLeave()" (keydown)="onDownButtonKeyDown($event)" (keyup)="onDownButtonKeyUp()"></button>
+            </span>
+            <button type="button" pButton [ngClass]="{'p-inputnumber-button p-inputnumber-button-up': true}" [class]="incrementButtonClass" [icon]="incrementButtonIcon" *ngIf="showButtons && buttonLayout !== 'stacked'" [disabled]="disabled"
+                (mousedown)="this.onUpButtonMouseDown($event)" (mouseup)="onUpButtonMouseUp()" (mouseleave)="onUpButtonMouseLeave()" (keydown)="onUpButtonKeyDown($event)" (keyup)="onUpButtonKeyUp()"></button>
+            <button type="button" pButton [ngClass]="{'p-inputnumber-button p-inputnumber-button-down': true}" [class]="decrementButtonClass" [icon]="decrementButtonIcon" *ngIf="showButtons && buttonLayout !== 'stacked'" [disabled]="disabled"
+                (mousedown)="this.onDownButtonMouseDown($event)" (mouseup)="onDownButtonMouseUp()" (mouseleave)="onDownButtonMouseLeave()" (keydown)="onDownButtonKeyDown($event)" (keyup)="onDownButtonKeyUp()"></button>
+        </span>
+    `,
+                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectionStrategy"].OnPush,
+                providers: [INPUTNUMBER_VALUE_ACCESSOR],
+                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None,
+                host: {
+                    '[class.p-inputwrapper-filled]': 'filled',
+                    '[class.p-inputwrapper-focus]': 'focused'
+                },
+                styles: [".p-inputnumber{display:inline-flex}.p-inputnumber-button{align-items:center;display:flex;flex:0 0 auto;justify-content:center}.p-inputnumber-buttons-horizontal .p-button.p-inputnumber-button .p-button-label,.p-inputnumber-buttons-stacked .p-button.p-inputnumber-button .p-button-label{display:none}.p-inputnumber-buttons-stacked .p-button.p-inputnumber-button-up{border-bottom-left-radius:0;border-bottom-right-radius:0;border-top-left-radius:0;padding:0}.p-inputnumber-buttons-stacked .p-inputnumber-input{border-bottom-right-radius:0;border-top-right-radius:0}.p-inputnumber-buttons-stacked .p-button.p-inputnumber-button-down{border-bottom-left-radius:0;border-top-left-radius:0;border-top-right-radius:0;padding:0}.p-inputnumber-buttons-stacked .p-inputnumber-button-group{display:flex;flex-direction:column}.p-inputnumber-buttons-stacked .p-inputnumber-button-group .p-button.p-inputnumber-button{flex:1 1 auto}.p-inputnumber-buttons-horizontal .p-button.p-inputnumber-button-up{border-bottom-left-radius:0;border-top-left-radius:0;order:3}.p-inputnumber-buttons-horizontal .p-inputnumber-input{border-radius:0;order:2}.p-inputnumber-buttons-horizontal .p-button.p-inputnumber-button-down{border-bottom-right-radius:0;border-top-right-radius:0;order:1}.p-inputnumber-buttons-vertical{flex-direction:column}.p-inputnumber-buttons-vertical .p-button.p-inputnumber-button-up{border-bottom-left-radius:0;border-bottom-right-radius:0;order:1;width:100%}.p-inputnumber-buttons-vertical .p-inputnumber-input{border-radius:0;order:2;text-align:center}.p-inputnumber-buttons-vertical .p-button.p-inputnumber-button-down{border-top-left-radius:0;border-top-right-radius:0;order:3;width:100%}.p-inputnumber-input{flex:1 1 auto}.p-fluid .p-inputnumber{width:100%}.p-fluid .p-inputnumber .p-inputnumber-input{width:1%}.p-fluid .p-inputnumber-buttons-vertical .p-inputnumber-input{width:100%}"]
+            }]
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] }]; }, { showButtons: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], format: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], buttonLayout: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], incrementButtonIcon: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], decrementButtonIcon: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], step: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], onInput: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"]
+        }], onFocus: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"]
+        }], onBlur: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"]
+        }], onKeyDown: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"]
+        }], locale: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], localeMatcher: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], mode: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], currency: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], currencyDisplay: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], useGrouping: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], minFractionDigits: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], maxFractionDigits: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], prefix: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], suffix: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], disabled: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], inputId: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], styleClass: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], style: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], placeholder: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], size: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], maxlength: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], tabindex: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], title: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], ariaLabel: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], ariaRequired: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], name: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], required: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], autocomplete: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], min: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], max: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], incrementButtonClass: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], decrementButtonClass: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], inputStyle: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], inputStyleClass: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], input: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"],
+            args: ['input']
+        }] }); })();
+class InputNumberModule {
+}
+InputNumberModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: InputNumberModule });
+InputNumberModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function InputNumberModule_Factory(t) { return new (t || InputNumberModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], primeng_inputtext__WEBPACK_IMPORTED_MODULE_2__["InputTextModule"], primeng_button__WEBPACK_IMPORTED_MODULE_3__["ButtonModule"]]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](InputNumberModule, { declarations: function () { return [InputNumber]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], primeng_inputtext__WEBPACK_IMPORTED_MODULE_2__["InputTextModule"], primeng_button__WEBPACK_IMPORTED_MODULE_3__["ButtonModule"]]; }, exports: function () { return [InputNumber]; } }); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](InputNumberModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
+        args: [{
+                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], primeng_inputtext__WEBPACK_IMPORTED_MODULE_2__["InputTextModule"], primeng_button__WEBPACK_IMPORTED_MODULE_3__["ButtonModule"]],
+                exports: [InputNumber],
+                declarations: [InputNumber]
+            }]
+    }], null, null); })();
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+//# sourceMappingURL=primeng-inputnumber.js.map
+
+/***/ }),
+
 /***/ "LRne":
 /*!**************************************************************!*\
   !*** ./node_modules/rxjs/_esm2015/internal/observable/of.js ***!
@@ -11758,6 +13488,311 @@ function getSymbolIterator() {
 const iterator = getSymbolIterator();
 const $$iterator = iterator;
 //# sourceMappingURL=iterator.js.map
+
+/***/ }),
+
+/***/ "LuMj":
+/*!***************************************************************************!*\
+  !*** ./node_modules/primeng/__ivy_ngcc__/fesm2015/primeng-radiobutton.js ***!
+  \***************************************************************************/
+/*! exports provided: RADIO_VALUE_ACCESSOR, RadioButton, RadioButtonModule, RadioControlRegistry */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RADIO_VALUE_ACCESSOR", function() { return RADIO_VALUE_ACCESSOR; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RadioButton", function() { return RadioButton; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RadioButtonModule", function() { return RadioButtonModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RadioControlRegistry", function() { return RadioControlRegistry; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+
+
+
+
+
+
+
+const _c0 = ["rb"];
+const _c1 = function (a1, a2, a3) { return { "p-radiobutton-label": true, "p-radiobutton-label-active": a1, "p-disabled": a2, "p-radiobutton-label-focus": a3 }; };
+function RadioButton_label_6_Template(rf, ctx) { if (rf & 1) {
+    const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "label", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function RadioButton_label_6_Template_label_click_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r3); const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r2.select($event); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMap"](ctx_r1.labelStyleClass);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction3"](5, _c1, _r0.checked, ctx_r1.disabled, ctx_r1.focused));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("for", ctx_r1.inputId);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r1.label);
+} }
+const _c2 = function (a1, a2, a3) { return { "p-radiobutton p-component": true, "p-radiobutton-checked": a1, "p-radiobutton-disabled": a2, "p-radiobutton-focused": a3 }; };
+const _c3 = function (a1, a2, a3) { return { "p-radiobutton-box": true, "p-highlight": a1, "p-disabled": a2, "p-focus": a3 }; };
+const RADIO_VALUE_ACCESSOR = {
+    provide: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NG_VALUE_ACCESSOR"],
+    useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["forwardRef"])(() => RadioButton),
+    multi: true
+};
+class RadioControlRegistry {
+    constructor() {
+        this.accessors = [];
+    }
+    add(control, accessor) {
+        this.accessors.push([control, accessor]);
+    }
+    remove(accessor) {
+        this.accessors = this.accessors.filter((c) => {
+            return c[1] !== accessor;
+        });
+    }
+    select(accessor) {
+        this.accessors.forEach((c) => {
+            if (this.isSameGroup(c, accessor) && c[1] !== accessor) {
+                c[1].writeValue(accessor.value);
+            }
+        });
+    }
+    isSameGroup(controlPair, accessor) {
+        if (!controlPair[0].control) {
+            return false;
+        }
+        return controlPair[0].control.root === accessor.control.control.root && controlPair[1].name === accessor.name;
+    }
+}
+RadioControlRegistry.ɵfac = function RadioControlRegistry_Factory(t) { return new (t || RadioControlRegistry)(); };
+RadioControlRegistry.ɵprov = Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"])({ factory: function RadioControlRegistry_Factory() { return new RadioControlRegistry(); }, token: RadioControlRegistry, providedIn: "root" });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](RadioControlRegistry, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
+        args: [{
+                providedIn: 'root'
+            }]
+    }], function () { return []; }, null); })();
+class RadioButton {
+    constructor(cd, injector, registry) {
+        this.cd = cd;
+        this.injector = injector;
+        this.registry = registry;
+        this.onClick = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        this.onFocus = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        this.onBlur = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        this.onModelChange = () => { };
+        this.onModelTouched = () => { };
+    }
+    ngOnInit() {
+        if (this.formControlName) {
+            this.control = this.injector.get(_angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgControl"]);
+            this.checkName();
+            this.registry.add(this.control, this);
+        }
+    }
+    handleClick(event, radioButton, focus) {
+        event.preventDefault();
+        if (this.disabled) {
+            return;
+        }
+        this.select(event);
+        if (focus) {
+            radioButton.focus();
+        }
+    }
+    select(event) {
+        if (!this.disabled) {
+            this.inputViewChild.nativeElement.checked = true;
+            this.checked = true;
+            this.onModelChange(this.value);
+            if (this.formControlName) {
+                this.registry.select(this);
+            }
+            this.onClick.emit(event);
+        }
+    }
+    writeValue(value) {
+        this.checked = (value == this.value);
+        if (this.inputViewChild && this.inputViewChild.nativeElement) {
+            this.inputViewChild.nativeElement.checked = this.checked;
+        }
+        this.cd.markForCheck();
+    }
+    registerOnChange(fn) {
+        this.onModelChange = fn;
+    }
+    registerOnTouched(fn) {
+        this.onModelTouched = fn;
+    }
+    setDisabledState(val) {
+        this.disabled = val;
+        this.cd.markForCheck();
+    }
+    onInputFocus(event) {
+        this.focused = true;
+        this.onFocus.emit(event);
+    }
+    onInputBlur(event) {
+        this.focused = false;
+        this.onModelTouched();
+        this.onBlur.emit(event);
+    }
+    onChange(event) {
+        this.select(event);
+    }
+    focus() {
+        this.inputViewChild.nativeElement.focus();
+    }
+    ngOnDestroy() {
+        if (this.formControlName) {
+            this.registry.remove(this);
+        }
+    }
+    checkName() {
+        if (this.name && this.formControlName && this.name !== this.formControlName) {
+            this.throwNameError();
+        }
+        if (!this.name && this.formControlName) {
+            this.name = this.formControlName;
+        }
+    }
+    throwNameError() {
+        throw new Error(`
+          If you define both a name and a formControlName attribute on your radio button, their values
+          must match. Ex: <p-radioButton formControlName="food" name="food"></p-radioButton>
+        `);
+    }
+}
+RadioButton.ɵfac = function RadioButton_Factory(t) { return new (t || RadioButton)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injector"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](RadioControlRegistry)); };
+RadioButton.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: RadioButton, selectors: [["p-radioButton"]], viewQuery: function RadioButton_Query(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_c0, true);
+    } if (rf & 2) {
+        var _t;
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.inputViewChild = _t.first);
+    } }, inputs: { disabled: "disabled", name: "name", value: "value", formControlName: "formControlName", label: "label", tabindex: "tabindex", inputId: "inputId", ariaLabelledBy: "ariaLabelledBy", style: "style", styleClass: "styleClass", labelStyleClass: "labelStyleClass" }, outputs: { onClick: "onClick", onFocus: "onFocus", onBlur: "onBlur" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵProvidersFeature"]([RADIO_VALUE_ACCESSOR])], decls: 7, vars: 22, consts: [[3, "ngStyle", "ngClass"], [1, "p-hidden-accessible"], ["type", "radio", 3, "checked", "disabled", "change", "focus", "blur"], ["rb", ""], ["role", "radio", 3, "ngClass", "click"], [1, "p-radiobutton-icon"], [3, "class", "ngClass", "click", 4, "ngIf"], [3, "ngClass", "click"]], template: function RadioButton_Template(rf, ctx) { if (rf & 1) {
+        const _r4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "input", 2, 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("change", function RadioButton_Template_input_change_2_listener($event) { return ctx.onChange($event); })("focus", function RadioButton_Template_input_focus_2_listener($event) { return ctx.onInputFocus($event); })("blur", function RadioButton_Template_input_blur_2_listener($event) { return ctx.onInputBlur($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function RadioButton_Template_div_click_4_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r4); const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](3); return ctx.handleClick($event, _r0, true); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "span", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](6, RadioButton_label_6_Template, 2, 9, "label", 6);
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMap"](ctx.styleClass);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", ctx.style)("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction3"](14, _c2, ctx.checked, ctx.disabled, ctx.focused));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("checked", ctx.checked)("disabled", ctx.disabled);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("id", ctx.inputId)("name", ctx.name)("value", ctx.value)("tabindex", ctx.tabindex)("aria-labelledby", ctx.ariaLabelledBy);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction3"](18, _c3, ctx.checked, ctx.disabled, ctx.focused));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("aria-checked", ctx.checked);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.label);
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["NgStyle"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgClass"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgIf"]], encapsulation: 2, changeDetection: 0 });
+RadioButton.ctorParameters = () => [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injector"] },
+    { type: RadioControlRegistry }
+];
+RadioButton.propDecorators = {
+    value: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    formControlName: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    name: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    disabled: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    label: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    tabindex: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    inputId: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    ariaLabelledBy: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    style: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    styleClass: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    labelStyleClass: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    onClick: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"] }],
+    onFocus: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"] }],
+    onBlur: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"] }],
+    inputViewChild: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"], args: ['rb',] }]
+};
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](RadioButton, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'p-radioButton',
+                template: `
+        <div [ngStyle]="style" [ngClass]="{'p-radiobutton p-component':true,'p-radiobutton-checked': checked, 'p-radiobutton-disabled': disabled, 'p-radiobutton-focused': focused}" [class]="styleClass">
+            <div class="p-hidden-accessible">
+                <input #rb type="radio" [attr.id]="inputId" [attr.name]="name" [attr.value]="value" [attr.tabindex]="tabindex" [attr.aria-labelledby]="ariaLabelledBy"
+                    [checked]="checked" (change)="onChange($event)" (focus)="onInputFocus($event)" (blur)="onInputBlur($event)" [disabled]="disabled">
+            </div>
+            <div (click)="handleClick($event, rb, true)" role="radio" [attr.aria-checked]="checked"
+                [ngClass]="{'p-radiobutton-box':true,
+                'p-highlight': checked, 'p-disabled': disabled, 'p-focus': focused}">
+                <span class="p-radiobutton-icon"></span>
+            </div>
+        </div>
+        <label (click)="select($event)" [class]="labelStyleClass"
+            [ngClass]="{'p-radiobutton-label':true, 'p-radiobutton-label-active':rb.checked, 'p-disabled':disabled, 'p-radiobutton-label-focus':focused}"
+            *ngIf="label" [attr.for]="inputId">{{label}}</label>
+    `,
+                providers: [RADIO_VALUE_ACCESSOR],
+                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectionStrategy"].OnPush
+            }]
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injector"] }, { type: RadioControlRegistry }]; }, { onClick: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"]
+        }], onFocus: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"]
+        }], onBlur: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"]
+        }], disabled: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], name: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], value: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], formControlName: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], label: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], tabindex: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], inputId: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], ariaLabelledBy: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], style: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], styleClass: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], labelStyleClass: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], inputViewChild: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"],
+            args: ['rb']
+        }] }); })();
+class RadioButtonModule {
+}
+RadioButtonModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: RadioButtonModule });
+RadioButtonModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function RadioButtonModule_Factory(t) { return new (t || RadioButtonModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"]]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](RadioButtonModule, { declarations: function () { return [RadioButton]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"]]; }, exports: function () { return [RadioButton]; } }); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](RadioButtonModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
+        args: [{
+                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"]],
+                exports: [RadioButton],
+                declarations: [RadioButton]
+            }]
+    }], null, null); })();
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+//# sourceMappingURL=primeng-radiobutton.js.map
 
 /***/ }),
 
